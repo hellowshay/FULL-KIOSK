@@ -1,0 +1,238 @@
+/* 🔹 Body Styling - Para sa buong webpage */
+body {
+    position: relative;
+    font-family:"Inter","consola, sans-serif";
+    text-align: center; /* Lahat ng text ay naka-center */
+    background-color:  transparent; 
+    display: flex;
+    justify-content: center;  
+}
+/* para sa blue na text*/
+.header{
+    font-size: 15px;
+    background-color: white;
+    position: absolute;
+    top: -1%;
+    border-radius: 50px 45px 50px 50px;
+    width: 100%;
+    margin-top: 100px;
+    
+}
+.up{ /* PARA SA MALIIT NA TEXT SA TAAS*/
+    color: #43444B;
+    margin-right: 180px;
+    font-family: "Nunito";
+        
+}
+
+/*para separate size sa pinaka heading na SMART PARKING  */
+.resize{ 
+    font-size: 25.19px;
+    font-family: "Poppins"; /* BOLD dapat*/
+    color: #2A57D8;
+
+}
+
+.parking-container {
+    margin-top: -30px;
+    padding: 10%;
+    top: 280px;
+    position: relative;    
+}
+
+.parking-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A2A0A0;
+    gap: 100px; /* para sa hati ng daanan ng kotse*/
+    
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: -100px;
+    
+}
+
+/* Right side cars (harap din sa kanan, fix ito) */
+.right-side .slot img {
+     position: relative;
+    transform: rotate(185deg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px
+    
+}
+.right-side{
+    transform: translateY(-100px);
+    margin-top: 50px;
+}
+
+.slot {
+    position: relative;
+    width: 100PX;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.slot img {
+    position: relative;
+    width: 70Px;
+    transform: rotate(50deg); /* I-rotate ang kotse */
+}
+
+
+/*FOR LEFT SIDE*/
+.kaliwa-line {
+        position: relative;
+        width: 2px; /* Lapad ng linya */
+        height: 353px; /* Haba ng linya */
+        background-color: #2A57D8; /* Kulay ng linya */
+        position: absolute;
+        margin-top: -30px;
+            
+    }
+.dash-line{
+    border-top: 2px dashed #ADB4CB ;
+    transform: rotate(20deg);
+    margin-top: -10px;
+    width: 100px;
+    position: absolute;
+
+}
+.line{
+     border-top: 2px dashed #ADB4CB;
+     transform: rotate(20deg);
+}
+.rotated-text{
+    transform: rotate(20deg);
+}
+/*FOR RIGHT SIDE*/
+.kanan-line{
+    width: 2%; /* Lapad ng linya */
+    height: 353px; /* Haba ng linya */
+    background-color: #2A57D8; /* Kulay ng linya */
+    position: absolute;
+    right: 1%; /* Ilagay sa kanan */
+    margin-top: -19px;
+}
+
+.tabingi-guhit{
+    border-top: 2px dashed #ADB4CB ;
+    transform: rotate(-20deg);
+    position: relative;
+
+}
+
+.guhit{
+border-top: 2px dashed #A2A0A0;
+transform: rotate(20deg);
+
+}
+.ikot{
+border-top: 2px;
+transform: rotate(-20deg);
+
+}
+.Entrance{
+    
+        margin-top: 300px; /* I-adjust kung gaano kababa */
+        margin-left: 5%;           
+    }
+    
+
+
+/* From Uiverse.io by felipesntr */ 
+button {
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 1em 2.5em 1em 2.5em;
+    border: none;
+    background: #E3F1FF;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+    font-family: "Poppins";
+    margin-left: 30px;
+}
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   button span {
+    color: #464646;
+   }
+   
+   button .border {
+    position: absolute;
+    border: 0.2em solid #aed6f1;/* LAPAD NG ITIM NA LINYA*/
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 8em;/* LPAD NG BILOG NA HOVER*/
+    height: 3em;
+    transform: translate(-50%, -50%);
+   }
+   
+   button:hover .border {
+    display: block;
+    width: 9.9em;
+    height: 3.7em;
+   }
+   
+   .full-rounded {
+    border-radius: 2em;
+   }
+
+   .tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #E8F0FC; /* Light blue background */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px auto; /* Para centered */
+    max-width: 600px; /* Limitahan ang lapad para hindi sumobra */
+}
+.tab-btn {
+    flex: 1; /* Pantay ang laki pero may limit na */
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    background-color: #E3F1FF;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+/* Hover Effect */
+.tab-btn:hover {
+    background-color: #004E98; /* Dark blue */
+    color: white; /* Mas malinaw na contrast */
+}
+
+/* Active (Current Page) */
+.tab-btn.active {
+    background-color: #2D73B5; /* Dark blue */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+    @media screen and (orientation: landscape) {
+        body {
+          background-color: white; /* Example effect */
+        }
+      }
+      @page {
+        size: landscape;
+      }
+            
